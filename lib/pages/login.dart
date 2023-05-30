@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_1/pages/album.dart';
+import 'package:latihan_1/pages/comment.dart';
 import 'package:latihan_1/pages/stack.dart';
 
 class LoginPage extends StatefulWidget {
@@ -13,8 +15,8 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Column(
-          children: const [
+        title: const Column(
+          children: [
             Text('Login'),
             Text(
               'Latihan Apps',
@@ -38,25 +40,43 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.red,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CommentPage(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        vertical: 60.0,
+                        horizontal: 60.0,
+                      ),
+                      child: Text('COMMENT'),
                     ),
-                    padding: EdgeInsets.symmetric(
-                      vertical: 60.0,
-                      horizontal: 60.0,
-                    ),
-                    child: Text('RED'),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.red,
+                  InkWell(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AlbumPage(),
+                      ),
                     ),
-                    padding: EdgeInsets.symmetric(
-                      vertical: 60.0,
-                      horizontal: 60.0,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        vertical: 60.0,
+                        horizontal: 60.0,
+                      ),
+                      child: Text('ALBUM'),
                     ),
-                    child: Text('RED'),
                   ),
                 ],
               ),
