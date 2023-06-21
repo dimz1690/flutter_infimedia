@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279297587727",
+    "project_id": "fluttermsg-8ec4f",
+    "storage_bucket": "fluttermsg-8ec4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279297587727:android:6c97b1212e49bf92db817a",
+        "android_client_info": {
+          "package_name": "com.example.latihan_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279297587727-aus7pb8hgpu01q7s0pcdh6gi4pgov3k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgnMxU2VniFp9652oCsvWFkfGE2myIQsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279297587727-aus7pb8hgpu01q7s0pcdh6gi4pgov3k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
