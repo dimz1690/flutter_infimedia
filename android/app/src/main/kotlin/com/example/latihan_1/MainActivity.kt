@@ -1,4 +1,4 @@
-package com.example.latihan_1
+package id.co.infimedia
 
 import io.flutter.embedding.android.FlutterActivity
 
